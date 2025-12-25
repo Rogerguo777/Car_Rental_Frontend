@@ -66,7 +66,7 @@
                         <a class="nav-link active" href="index.html">首頁</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!--<li class="nav-item dropdown">
                         <button class="nav-link dropdown-toggle btn btn-link p-0" id="branchDropdown"
                             data-bs-toggle="dropdown">
                             服務據點
@@ -81,11 +81,44 @@
                             </li>
                             <li><a class="dropdown-item" href="branches.html?region=ALL">所有據點</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="goToAttachDriver()">
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="branchDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            服務據點
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="branchDropdown">
+                            <li><a class="dropdown-item" href="branches.html?region=北部">北部租車</a></li>
+                            <li><a class="dropdown-item" href="branches.html?region=中部">中部租車</a></li>
+                            <li><a class="dropdown-item" href="branches.html?region=南部">南部租車</a></li>
+                            <li><a class="dropdown-item" href="branches.html?region=東部">東部租車</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="branches.html?region=ALL">所有據點</a></li>
+                        </ul>
+                        <!--<li class="nav-item">
+                        <a class="btn btn-outline-light btn-sm ms-lg-3" href="javascript:void(0)" onclick="goToAttachDriver()">
                             附駕接送
                         </a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="attachDriverMenu"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            附駕接送
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="attachDriverMenu">
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0)" onclick="goToAttachDriver()">
+                                    前往預定
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="order-search.html">
+                                    查詢訂單
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
@@ -169,7 +202,7 @@
 
                 <div class="col-lg-1 col-12 d-grid">
                     <button type="button" id="searchBtn" class="btn btn-primary btn-lg" onclick="goToReserve() ">
-                        <i class="bi bi-search">開始租車</i>
+                        <i class="bi bi-search">GO!</i>
                     </button>
                 </div>
             </form>
